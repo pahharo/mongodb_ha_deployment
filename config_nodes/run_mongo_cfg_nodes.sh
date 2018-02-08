@@ -1,6 +1,6 @@
-docker run --name mongo_cfg_1 -td mongo_config:latest
+docker run --name mongo_cfg_1 --net mongo_net --ip 172.18.0.5 -td m4nusl/mongodb_config:latest
 
-docker run --name mongo_cfg_2 -td mongo_config:latest
+docker run --name mongo_cfg_2 --net mongo_net --ip 172.18.0.6 -td m4nusl/mongodb_config:latest
 
 sleep 3
 
