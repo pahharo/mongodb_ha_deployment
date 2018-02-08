@@ -1,13 +1,13 @@
 # mongodb_ha_deployment
 MongoDB HA deployment with docker
 
-### Pull images (Option 1)
+## Pull images (Option 1)
 To pull the images from the repo:
 ```bash
 # ./pull_containers.sh
 ```
 
-### Build images (Option 2)
+## Build images (Option 2)
 To build images from local project:
 ```bash
 # ./build_containers.sh
@@ -19,7 +19,7 @@ To deploy our mongodb cluster with the default configuration:
 # ./run_all.sh
 ```
 
-## Check that all is ok:
+### Check that all is ok:
 To check that all is working ok:
 ```bash
 # mongo --host 172.18.0.10:27017 Requirement --eval('db.Requirements.insertOne({"Granada": "Alhambra"})')
@@ -33,5 +33,12 @@ After that, you have to request again for the content of the Requirements collec
 ```bash
 # mongo --host 172.18.0.10:27017 --eval('db.Requirements.find()')
 ```
-If it does not respond in the first request, try again (the cluster have to reconfigure).  
+If it does not respond in the first request, try again (the cluster has to reconfigure).  
 The respond must be the same ({"Granada": "Alhambra"}).
+
+### Remove containers
+To remove the containers:
+```bash
+# ./remove_containers.sh
+```
+ 
