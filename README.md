@@ -1,6 +1,10 @@
 # mongodb_ha_deployment
 MongoDB HA deployment with docker
 
+## Requirements
+· Docker (version 17.09.0-ce used).  
+· Linux OS (Ubuntu 16.04 Distribution used).
+
 ## Pull images (Option 1)
 To pull the images from the repo:
 ```bash
