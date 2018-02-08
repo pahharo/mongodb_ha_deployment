@@ -31,7 +31,7 @@ If it goes well, now you have to bring down the primary mongodb:
 ```
 After that, you have to request again for the content of the Requirements collection:
 ```bash
-# mongo --host 172.18.0.10 --eval 'db.Requirements.find()'
+# mongo --host 172.18.0.10 Requirement --eval 'db.Requirements.find()'
 ```
 If it does not respond in the first request, try again (the cluster has to reconfigure).  
 The respond must be the same ({"Granada": "Alhambra"}).
